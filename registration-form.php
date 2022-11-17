@@ -7,7 +7,7 @@
         background-color: #2a2b38;
     }
    .card {
- width: 190px;
+ width: 250px;
  padding: 1.9rem 1.2rem;
  text-align: center;
  background: #2a2b38;
@@ -53,6 +53,10 @@ box-shadow:  29px 29px 57px #1a1b23,
  color: #f5f5f5;
 }
 
+a.login {
+  color: white;
+}
+
 /*Buttons*/
 .btn {
  margin: 1rem;
@@ -94,7 +98,7 @@ box-shadow:  29px 29px 57px #1a1b23,
 <body>
 <div class="card">
   <h4 class="title">Sign Up</h4>
-  <form action="registration.php" method="POST">
+  <form action="register.php" method="POST">
   <div class="field">
   <i class="fa-regular fa-user"></i>
       <input autocomplete="off" id="username" placeholder="Username" class="input-field" name="username" type="text">
@@ -110,6 +114,10 @@ box-shadow:  29px 29px 57px #1a1b23,
     <div class="field">
     <i class="fa-solid fa-key"></i>
       <input autocomplete="off" id="conpassword" placeholder="Confirm Password" class="input-field" name="password" type="password">
+    </div>
+    <div>
+      <br>
+      <a href=login-form.php class=login>Already have an account? Login</a>
     </div>
     <button class="btn" type="submit">Register</button>
   </form>

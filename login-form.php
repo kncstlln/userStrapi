@@ -97,13 +97,13 @@ box-shadow:  29px 29px 57px #1a1b23,
   <form action="login.php" method="post"> 
     <div class="field">
     <i class="fa-solid fa-at"></i>
-      <input autocomplete="off" id="regemail" placeholder="Email" class="input-field" name="regemail" type="email">
+      <input autocomplete="off" id="identifier" placeholder="Email" class="input-field" name="identifier" type="text">
     </div>
     <div class="field">
     <i class="fa-solid fa-lock"></i>
       <input autocomplete="off" id="password" placeholder="Password" class="input-field" name="password" type="password">
     </div>
-    <button class="btn" type="submit">Login</button>
+    <button class="btn" type="submit" onClick=>Login</button>
     <a href="#" class="btn-link">Forgot your password?</a>
   </form>
 </div>

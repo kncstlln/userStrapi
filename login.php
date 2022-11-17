@@ -1,16 +1,16 @@
 <?php
 
 include "vendor/autoload.php";
+include "src/AuthClient.php";
 
 use App\AuthClient;
 
 $client = new AuthClient();
 
-$identifier = $_POST['username'];
+$identifier = $_POST['identifier'];
 $password = $_POST['password'];
 
 $result = $client->login($identifier, $password);
-$result->getStatusCode();
-$result->getReasonPhrase();
-$result->getProtocolVersion();
-var_dump($result->getBody()->getContents());
+$body=json_decode($result->getBody()->getContents());
+$id =  $body->user->id;
+header('Location: welcome.php?id='.$id);
